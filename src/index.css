@@ -1,0 +1,255 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.App::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.App::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url('./img/back.jpeg') no-repeat center center / cover;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.header,
+.footer{
+  position: sticky;
+  background-color: rgb(36, 75, 114);
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+  text-align: center;
+  font-weight: bolder;
+  z-index: 999;
+}
+
+.header{
+  top: 0;
+  padding: 10px 0px;
+  font-size: 1.5rem;
+}
+
+.main{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.footer{
+  bottom: 0;
+  padding: 10px 0;
+  font-size: 2rem;
+}
+
+.ul-list{
+  width: 60%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-li{
+  width: 100%;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+  background-color: cornflowerblue;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 5px -2px midnightblue;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+.input-checkbox-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.check-box{
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+
+.label{
+  margin-left: 10px;
+  font-size: 30px;
+}
+.delete-btn{
+  width: 60px;
+  height: 60px;
+  background-color: whitesmoke;
+  color: rgb(36, 75, 114);
+  padding: 10px;
+  border-radius: 6px;
+  transition: all 0.4s;
+}
+
+.delete-btn:hover{
+  cursor: pointer;
+  color: red;
+
+}
+
+.show-when-empty{
+  color: #fff;
+  margin-top: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 5px -3px #000;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bolder;
+}
+
+
+/* Start add item container */
+.add-form-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.add-form-container .add-form{
+  width: 50%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-form-container .add-form .add-form-input{
+  width: calc(100% - 60px);
+  height: 90%;
+  padding: 10px;
+  font-size: 1.5rem;
+  outline-color: gold;
+}
+.add-item-btn-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background-color: yellow;
+  width: 60px;
+  height: 90%;
+}
+.form-add-btn{
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: rgb(36, 75, 114);
+  color: whitesmoke;
+  transition: all 0.4s;
+  border: 3px solid rgb(36, 75, 114);
+}
+
+.form-add-btn:hover{
+  border: 3px solid gold;
+  background-color: whitesmoke;
+  color: rgb(36, 75, 114);
+}
+/* End add item container */
+
+/* Start Search item container */
+.search-item-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.search-item-container .search-form{
+  height: 100%;
+  width: 50%;
+  /* background-color: red; */
+}
+.search-item-container .search-form .search-form-input{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5rem;
+  outline-color: gold;
+}
+
+
+
+.fetch-error-p{
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+.loading-p{
+  padding: 10px 0;
+  font-size: 2rem;
+  text-align: c;
+}
+
+@media screen and (min-width: 576px) {
+  
+}
