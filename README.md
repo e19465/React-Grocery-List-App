@@ -12,7 +12,7 @@ React Gocery List web responsive Application
 
   
 ## Explore Blog App here
--  https://sasindu-e19465-to-do-list.netlify.app/
+-  https://sasindu-e19465-grocery-list-app.netlify.app/
 
 ## To use App,
 - Clone this github repository
