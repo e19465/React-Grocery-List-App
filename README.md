@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# React Grocery List App
+React Gocery List web responsive Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://github.com/e19465/React-Grocery-List-App/blob/main/src/img/grocery.png)
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+"Introducing my grocery list app, meticulously crafted with ReactJS and powered by a JSON development server. Seamlessly blending user-friendly design with dynamic functionality, the app provides an intuitive platform for managing and organizing grocery items. From real-time updates to responsive interactions, it leverages React's capabilities to ensure a smooth and efficient user experience. With the JSON development server at its core, the app delivers a seamless integration of data, allowing users to effortlessly add, modify, and track their shopping essentials in a visually appealing and user-centric environment."
 
-### `npm start`
+## Used languages
+- React JS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  
+## Explore Blog App here
+-  https://sasindu-e19465-to-do-list.netlify.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## To use App,
+- Clone this github repository
+- Open two terminals on code editor (ex: VScode)
+- In one terminal run, npx json-server -p 3500 -w data/db.json
+- ![](https://github.com/e19465/React-Blog-App/blob/main/src/img/ss3.PNG)
+- Other terminal run, npm start.
+- ![](https://github.com/e19465/React-Blog-App/blob/main/src/img/ss4.PNG)
+- ![](https://github.com/e19465/React-Blog-App/blob/main/src/img/ss5.PNG)
+- Now, you good to go!
 
-### `npm test`
+## Here is the responsive design
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://github.com/e19465/React-Grocery-List-App/blob/main/src/img/ss1.PNG)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+![](https://github.com/e19465/React-Grocery-List-App/blob/main/src/img/ss2.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
